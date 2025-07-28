@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Greensphere 🌿 | Carbon Footprint Calculator</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<header>
+  <div class="logo">Greensphere 🌱</div>
+  <nav>
+    <a class="nav-link active" data-section="home">Home 🏠</a>
+    <a class="nav-link" data-section="calculator">Calculator 🧮</a>
+    <a class="nav-link" data-section="tips">Tips 💡</a>
+    <a class="nav-link" data-section="about">About 🐝</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <div class="hero">
+      <h1>Welcome to Greensphere! 🌎</h1>
+      <p>Measure your carbon footprint and do something for the environment.</p>
+      <a href="#" class="btn-primary" data-section="calculator">Start Calculator 🛠️</a>
+    </div>
+    <div class="features">
+      <div class="feature-card">
+        <h2>Fast & Simple ✨</h2>
+        <p>Know your carbon footprint quickly by answering a few questions.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Comprehensive & Accurate 📊</h2>
+        <p>Detailed calculations based on travel, energy, food habits, and more.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Tips & Suggestions 🍃</h2>
+        <p>Smart ways to reduce your footprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator Section -->
+  <section id="calculator">
+    <div class="calculator-section">
+      <h1>Carbon Footprint Calculator 🧮</h1>
+      <form id="carbonForm">
+        <label for="vehicle">Type of Transport 🚗:</label>
+        <select id="vehicle" name="vehicle" required>
+          <option value="">Select</option>
+          <option value="car">Car</option>
+          <option value="motorbike">Motorbike</option>
+          <option value="bus">Bus</option>
+          <option value="train">Train</option>
+          <option value="flight">Flight</option>
+        </select>
+
+        <label for="distance">Distance (km) 🌍:</label>
+        <input type="number" id="distance" name="distance" min="0" step="any" required />
+
+        <label for="electricity">Monthly Electricity Consumption (kWh) ⚡:</label>
+        <input type="number" id="electricity" name="electricity" min="0" step="any" required />
+
+        <label for="waste">Monthly Waste Amount (kg) 🗑️:</label>
+        <input type="number" id="waste" name="waste" min="0" step="any" required />
+
+        <button type="submit" class="btn-primary">Calculate 🔍</button>
+      </form>
+
+      <div id="result" class="result-box" style="display:none;">
+        <h2>Your Carbon Footprint is: <span id="carbonValue"></span> kg CO₂ per month 🌱</h2>
+        <p id="advice"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips">
+    <div class="tips-section">
+      <h1>Useful Environmental Tips 💡</h1>
+      <ul>
+        <li>🚲 Walk, cycle or use public transport.</li>
+        <li>💡 Use energy-saving bulbs and appliances.</li>
+        <li>🌳 Plant trees and protect forests.</li>
+        <li>♻️ Practice recycling and reduce waste.</li>
+        <li>🥦 Eat more plant-based food, reduce meat consumption.</li>
+        <li>🔌 Avoid unnecessary electricity use.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-section">
+      <h1>What is Greensphere? 🌍</h1>
+      <p>
+        Greensphere aims to raise awareness about individual carbon footprints and help people adopt environmentally responsible lifestyles.
+      </p>
+      <p>
+        Our mission is to make environmental protection simple and engaging through technology and beautiful design.
+      </p>
+      <p>Join us and create a greener future for the Earth! 💚🌱</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Greensphere | Saving the Earth Together 🌳</p>
+</footer>
+ <script src="style.js"></script>
+
+</body>
+</html>
